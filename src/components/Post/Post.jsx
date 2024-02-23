@@ -10,11 +10,14 @@ function Post() {
   const [isPresent, setIsPresent] = useState(false);
 
   const addPosts = async () => {
-    await fetch(`http://localhost:9000/users/${Number(userId)}/posts`, {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify(data),
-    })
+    await fetch(
+      `https://cointab-backend-uwqe.onrender.com/users/${Number(userId)}/posts`,
+      {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    )
       .then((res) => res.json())
       .then((result) => {
         if (result.message === "Success") {

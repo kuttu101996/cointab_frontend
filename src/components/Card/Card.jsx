@@ -8,7 +8,7 @@ function Card({ ele }) {
   ele = { posts: [{}], ...ele };
 
   const addUser = async () => {
-    await fetch(`http://localhost:9000/users`, {
+    await fetch(`https://cointab-backend-uwqe.onrender.com/users`, {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(ele),
