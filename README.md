@@ -23,28 +23,20 @@ This repository contains a React web application for the Cointab SE-ASSIGNMENT. 
   - A reusable button component for downloading user-specific posts in Excel format.
 # Usage
 Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+- git clone https://github.com/your-username/your-repository.git
+- cd your-repository
 Install dependencies:
-bash
-Copy code
-npm install
+- npm install
 Start the development server:
-bash
-Copy code
-npm start
+- npm start
 Open your browser and navigate to http://localhost:3000 to view the application.
 # Dependencies
 - React
 - react-router-dom
 # API Endpoints
-User data: https://cointab-backend-uwqe.onrender.com/users/insert-user
-Posts data: https://cointab-backend-uwqe.onrender.com/posts
-Placeholder posts data: https://jsonplaceholder.typicode.com/posts
+- User data: https://cointab-backend-uwqe.onrender.com/users/insert-user
+- Posts data: https://cointab-backend-uwqe.onrender.com/posts
+- Placeholder posts data: https://jsonplaceholder.typicode.com/posts
 # Notes
 The application uses Tailwind CSS for styling.
 Make sure to replace the placeholder API endpoints with the actual backend endpoints in a production environment.
-
-<script src="https://cdn.jsdelivr.net/clipboard.js/2.0.8/clipboard.min.js"></script>
