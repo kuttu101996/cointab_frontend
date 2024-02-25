@@ -38,5 +38,5 @@ This repository contains a React web application for the Cointab SE-ASSIGNMENT. 
 - Posts data: https://cointab-backend-uwqe.onrender.com/posts
 - Placeholder posts data: https://jsonplaceholder.typicode.com/posts
 # Notes
-The application uses Tailwind CSS for styling.
-Make sure to replace the placeholder API endpoints with the actual backend endpoints in a production environment.
+  - The application uses Tailwind CSS for styling.
+  - Make sure to replace the placeholder API endpoints with the actual backend endpoints in a production environment.
