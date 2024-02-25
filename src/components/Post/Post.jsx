@@ -39,18 +39,9 @@ function Post() {
       <div className="flex flex-1 w-full justify-around py-3 border-b-2">
         <h1 className="font-semibold text-2xl">Cointab SE-ASSIGNMENT</h1>
         <div className="flex w-1/3 justify-center">
-          {/* <NavLink className="text-center" to="">
-          Home
-        </NavLink> */}
           {isPresent ? (
             <DownloadExcelButton posts={data} />
           ) : (
-            // <button
-            //   type="button"
-            //   className="rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
-            // >
-            //   Download In Excel
-            // </button>
             <button
               onClick={addPosts}
               type="button"
@@ -61,31 +52,10 @@ function Post() {
           )}
         </div>
       </div>
-      {/* <div className="flex flex-1 w-full justify-around py-3">
-        <div className="flex w-1/3 justify-between">
-          {isPresent ? (
-            <DownloadExcelButton posts={data} />
-          ) : (
-            // <button
-            //   type="button"
-            //   className="rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
-            // >
-            //   Download In Excel
-            // </button>
-            <button
-              onClick={addPosts}
-              type="button"
-              className="rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
-            >
-              Bulk Add
-            </button>
-          )}
-        </div>
-      </div> */}
-      {/* <h1 className="font-semibold text-3xl text-center pb-2">{user.name}</h1> */}
-      {/* <h1 className="font-semibold text-xl text-center pb-4">
+      <h1 className="font-semibold text-3xl text-center pb-2">{user.name}</h1>
+      <h1 className="font-semibold text-xl text-center pb-4">
         Company: {user.company.name}
-      </h1> */}
+      </h1>
       <div className="grid grid-cols-3 w-[1300px] m-auto gap-4 mt-10">
         {data.length > 0 &&
           data.map((ele) => (
