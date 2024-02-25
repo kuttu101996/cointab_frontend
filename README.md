@@ -6,9 +6,9 @@ This repository contains a React web application for the Cointab SE-ASSIGNMENT. 
 
 # Components
 1. App.jsx
-Main application component.
-Combines the Header and Outlet components.
-Renders the application structure using React Router.
+  - Main application component.
+  - Combines the Header and Outlet components.
+  - Renders the application structure using React Router.
 2. Header.jsx
 Header component displaying the application title.
 Includes conditional rendering based on the presence of user information.
