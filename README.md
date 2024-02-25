@@ -46,3 +46,5 @@ Placeholder posts data: https://jsonplaceholder.typicode.com/posts
 # Notes
 The application uses Tailwind CSS for styling.
 Make sure to replace the placeholder API endpoints with the actual backend endpoints in a production environment.
+
+<script src="https://cdn.jsdelivr.net/clipboard.js/2.0.8/clipboard.min.js"></script>
