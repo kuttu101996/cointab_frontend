@@ -8,7 +8,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { About, Home, Post } from "./components/index.js";
+import { Home, Post } from "./components/index.js";
 import UserContextProvider from "./context/userContextProvider";
 
 const router = createBrowserRouter(

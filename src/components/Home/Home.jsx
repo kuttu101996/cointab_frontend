@@ -10,9 +10,13 @@ function Home() {
       .then((result) => setData(result));
   };
   return (
-    <div>
+    <div className="flex flex-1 mt-5 items-center justify-center w-full">
       {data.length > 1 ? (
-        data.map((ele) => <Card key={ele.id} ele={ele} />)
+        <div className="grid grid-cols-3 gap-4">
+          {data.map((ele) => (
+            <Card key={ele.id} ele={ele} />
+          ))}
+        </div>
       ) : (
         <div>
           <button
