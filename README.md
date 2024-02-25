@@ -22,7 +22,7 @@ This repository contains a React web application for the Cointab SE-ASSIGNMENT. 
 ### 5. DownloadExcelButton.jsx
   - A reusable button component for downloading user-specific posts in Excel format.
 # Usage
-1. Clone the repository:
+##### 1. Clone the repository:
   - git clone https://github.com/your-username/your-repository.git
   - cd your-repository
 1. Install dependencies:
