@@ -5,7 +5,7 @@ import DownloadExcelButton from "../DownloadExcelButton/DownloadExcelButton";
 
 function Post() {
   const { userId } = useParams();
-  // const { user } = useContext(UserContext);
+  const { user } = useContext(UserContext);
   const [data, setData] = useState([]);
   const [isPresent, setIsPresent] = useState(false);
 
@@ -26,13 +26,13 @@ function Post() {
   };
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${Number(1)}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?userId=${Number(userId)}`)
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
         setData(result);
       });
-  }, []);
+  }, [userId]);
 
   return (
     <div>
@@ -40,7 +40,7 @@ function Post() {
         <h1 className="font-semibold text-2xl">Cointab SE-ASSIGNMENT</h1>
         <div className="flex w-1/3 justify-center">
           {isPresent ? (
-            <DownloadExcelButton posts={data} />
+            <DownloadExcelButton userId={userId} posts={data} />
           ) : (
             <button
               onClick={addPosts}
