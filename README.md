@@ -37,8 +37,8 @@ Copy code
 npm start
 Open your browser and navigate to http://localhost:3000 to view the application.
 # Dependencies
-React
-react-router-dom
+- React
+- react-router-dom
 # API Endpoints
 User data: https://cointab-backend-uwqe.onrender.com/users/insert-user
 Posts data: https://cointab-backend-uwqe.onrender.com/posts
