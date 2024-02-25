@@ -9,18 +9,18 @@ This repository contains a React web application for the Cointab SE-ASSIGNMENT. 
   - Main application component.
   - Combines the Header and Outlet components.
   - Renders the application structure using React Router.
-2. Header.jsx
-Header component displaying the application title.
-Includes conditional rendering based on the presence of user information.
-3. Card.jsx
-Component for displaying user information in a card format.
-Provides the option to add a user and navigate to user-specific posts.
-4. Post.jsx
-Component for displaying user-specific posts.
-Allows bulk addition of posts and downloading posts in Excel format.
-Utilizes the DownloadExcelButton component for Excel download.
-5. DownloadExcelButton.jsx
-A reusable button component for downloading user-specific posts in Excel format.
+### 2. Header.jsx
+  - Header component displaying the application title.
+  - Includes conditional rendering based on the presence of user information.
+### 3. Card.jsx
+  - Component for displaying user information in a card format.
+  - Provides the option to add a user and navigate to user-specific posts.
+### 4. Post.jsx
+  - Component for displaying user-specific posts.
+  - Allows bulk addition of posts and downloading posts in Excel format.
+  - Utilizes the DownloadExcelButton component for Excel download.
+### 5. DownloadExcelButton.jsx
+  - A reusable button component for downloading user-specific posts in Excel format.
 # Usage
 Clone the repository:
 bash
