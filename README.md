@@ -5,7 +5,7 @@
 This repository contains a React web application for the Cointab SE-ASSIGNMENT. The application consists of several components to display user information and posts, allowing users to add and download posts in bulk.
 
 # Components
-1. App.jsx
+### 1. App.jsx
   - Main application component.
   - Combines the Header and Outlet components.
   - Renders the application structure using React Router.
