@@ -18,7 +18,16 @@ function Post() {
       .then((res) => res.json())
       .then((result) => {
         if (result.message === "Success") {
-          alert(`${result.message}`);
+          toast.success("Posts added Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
           setIsPresent(true);
         }
       })
@@ -29,7 +38,6 @@ function Post() {
     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${Number(userId)}`)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
         setData(result);
       });
   }, [userId]);

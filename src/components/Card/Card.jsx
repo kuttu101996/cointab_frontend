@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "../../context/userProvider";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Card({ ele }) {
   const { setUser } = useContext(UserContext);
@@ -8,7 +10,7 @@ function Card({ ele }) {
   ele = { posts: [{}], ...ele };
 
   const addUser = async () => {
-    await fetch(`https://cointab-backend-uwqe.onrender.com/users/insert-user`, {
+    await fetch(`http://localhost:9000/users/insert-user`, {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(ele),
@@ -17,10 +19,29 @@ function Card({ ele }) {
       .then((result) => {
         console.log(result);
         if (result.message === "Success") {
+          toast.success("User added Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
           setIsPresent(true);
           setUser(ele);
         } else if (result.message === "User already exists") {
-          alert(`User Exists`);
+          toast.info("User already exist", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
           setIsPresent(true);
           setUser(ele);
         }

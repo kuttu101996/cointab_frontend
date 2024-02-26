@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Home, Post } from "./components/index.js";
 import UserContextProvider from "./context/userContextProvider";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <UserContextProvider>
       <RouterProvider router={router} />
+      <ToastContainer />
     </UserContextProvider>
   </React.StrictMode>
 );
